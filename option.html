@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html style="width: 350px; ">
+    <head>
+        <meta charset="utf-8">
+        <title>Resource Downloader Options</title>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/utils.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Configuration</h1>
+        </div>
+        <div>
+            <input id="rr_func_start" type="checkbox"/>
+            <label for="rr_func_start">Function Active?</label>
+        </div>
+        <div id="rr_content">
+            <div>
+                <h3>Target Host/IP</h3>
+                <input id="rr_all_target_flag" type="checkbox"/>
+                <label for="rr_all_target_flag">ALL</label>
+            </div>
+            <div id="rr_targets_content">
+                <div>
+                    <ul id="rr_target_list">
+                    </ul>
+                </div>
+                <div>
+                    <label for="txt_new_url">Add new HOST/IP：</label>
+                    <input id="txt_new_url" type="text"/>
+                    <button id="rr_btn_target_add">add</button>
+                </div>
+            </div>
+            <div><h3>Resource Type</h3></div>
+            <div>
+                <div>
+                    <input id="rr_type_select_all" type="checkbox"/>
+                    <label for="rr_type_select_all">ALL</label>
+                </div>
+                <div style="margin: 10px 0px;" id="rr_types_content">
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #333;margin-bottom: 10px;"></div>
+        <div>
+            <button id="rr_clear_cache">Clear Cache</button>
+        </div>
+        <script src="./js/popup.js"></script>
+    </body>
+</html>
